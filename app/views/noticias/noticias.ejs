@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<table id='customers' class='table table-hover table-striped table-bordered table-responsive' >
+    <thead>
+        <tr>
+            <th width="30%"><b>Código da noticia</b></th>
+            <th width="29%"><b>Titulo da noticia</b></th>
+            <th class='text-center' colspan='2'><b>Funções</b></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    		<% for(var i=0; i < noticias.length; i++) {%>
+      		<td><%= noticias[i].id_noticias %></td>
+      		<td><%= noticias[i].titulo %></td>
+        <td width="14%" class='text-center'><button type='button' class='btn btn-default btn-xs' data-toggle='modal' data-target='#cxEditaEquipRes' enable='disabled'>Editar</button></td>
+            <td width="16%" class='text-center'><button type='button' class='btn btn-default btn-xs' data-toggle='modal' data-target='#cxEditaEquipRes' enable='disabled'>Excluir</button></td>	
+				
+        </tr>
+   <% } %>
+
+    </tbody>
+</table>
+
+
+
+</body>
+</html>
