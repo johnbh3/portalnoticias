@@ -6,7 +6,7 @@
   "main": "noticias.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node noticias"
+    "start": "node app"
   },
   "author": "julio",
   "license": "ISC",
