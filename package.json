@@ -1,11 +1,12 @@
 {
   "name": "portal_noticias",
   "version": "1.0.0",
+  "private":true,  
   "description": "site de noticias",
   "main": "noticias.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app"
+    "start": "node noticias"
   },
   "author": "julio",
   "license": "ISC",
