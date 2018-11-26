@@ -7,7 +7,7 @@ var app = require('./config/server');
 
 //var rotaFormuInclusaoNoticia = require('./app/routes/formulario_inclusao_noticia')(app);
 //rotaFormuInclusaoNoticia(app);
-app.listen(3000, function(){
+app.listen(3000,'0.0.0.0', function(){
    // console.log("servidor rodando com Express");
     console.log('Servidor ON');
 });
